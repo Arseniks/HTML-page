@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+  <title>Технологии</title>
+
+  
+  
+  <link rel="stylesheet" href="styles.css">
+  <Script Language="JavaScript1.1">
+  var dn
+  c1=new Image(); c1.src="c1.gif"
+  c2=new Image(); c2.src="c2.gif"
+  c3=new Image(); c3.src="c3.gif"
+  c4=new Image(); c4.src="c4.gif"
+  c5=new Image(); c5.src="c5.gif"
+  c6=new Image(); c6.src="c6.gif"
+  c7=new Image(); c7.src="c7.gif"
+  c8=new Image(); c8.src="c8.gif"
+  c9=new Image(); c9.src="c9.gif"
+  c0=new Image(); c0.src="c0.gif"
+  cb=new Image(); cb.src="cb.gif"
+  cam=new Image(); cam.src="cam.gif"
+  cpm=new Image(); cpm.src="cpm.gif"
+  function extract(h,m,s,type)
+  {if (!document.images)
+    return
+    if (h<=9)
+      {document.images.a.src=cb.src
+      document.images.b.src=eval("c"+h+".src")}
+    else
+      {document.images.a.src=eval("c"+Math.floor(h/10)+".src")
+      document.images.b.src=eval("c"+(h%10)+".src")}
+    if (m<=9)
+      {document.images.d.src=c0.src
+      document.images.e.src=eval("c"+m+".src")}
+    else
+      {document.images.d.src=eval("c"+Math.floor(m/10)+".src")
+      document.images.e.src=eval("c"+(m%10)+".src")}
+    if (s<=9)
+      {document.g.src=c0.src
+      document.images.h.src=eval("c"+s+".src")}
+    else
+      {document.images.g.src=eval("c"+Math.floor(s/10)+".src")
+      document.images.h.src=eval("c"+(s%10)+".src")}
+    if (dn=="AM") document.j.src=cam.src
+    else document.images.j.src=cpm.src}
+  function show3()
+    {if (!document.images)
+      return
+    var Digital=new Date()
+    var hours=Digital.getHours()
+    var minutes=Digital.getMinutes()
+    var seconds=Digital.getSeconds()
+    dn="AM" 
+    if ((hours>=12)&&(minutes>=1)||(hours>=13))
+      {dn="PM"
+        hours=hours-12}
+    if (hours==0)
+    hours=12
+    extract(hours,minutes,seconds,dn)
+    setTimeout("show3()",1000)}
+</Script>
+
+</head>
+
+
+<body OnLoad="show3()">
+<Img Src="cb.gif" Name="a" border=0><Img Src="cb.gif" Name="b" border=0>
+<Img Src="colon.gif" Name="c" border=0><Img Src="cb.gif" Name="d" border=0>
+<Img Src="cb.gif" Name="e" border=0><Img Src="colon.gif" Name="f" border=0>
+<Img Src="cb.gif" Name="g" border=0><Img Src="cb.gif" Name="h" border=0>
+<Img Src="cam.gif" Name="j" border=0>
+<table border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td class="menu">Роботы</td>
+      <td class="menu" OnMouseOver="this.style.backgroundColor='#F5DEB3' " 
+	  OnMouseOut="this.style.backgroundColor='#ffffff'  "><a href="ii.html">Искуственный интеллект</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="bigtable" border="0" cellpadding="0" cellspacing="0">
+
+  <tbody>
+    <tr>
+      <td class="picturecell"><video src="Geminoid.mp4" controls="" width="560" height="315"></video><br>
+      </td>
+      <td class="text">
+      <h1>Geminoid DK</h1>
+      <div id="innovation"><img src="robo.png"></div>
+      <p>Это один из самых реалистичных человекоподобных роботов. Его
+построил Хироши Исигуро вместе со своими коллегами из Japan’s Advanced
+Telecommunications Research Institute International. Внешность этого
+робота является точной копией профессора Хенрика Шарфе из Aalborg
+University. Geminoid DK может управляться дистанционно, с помощью
+передовой технологии захвата движений. Она позволяет машине имитировать
+выражение лица и точно повторять движения. Источник:
+http://fishki.net/1876696-chto-umejut-samye-prodvinutye-na-segodnjashnij-den-roboty.html
+© Fishki.net</p>
+      </td>
+    </tr>
+    <tr>
+      <td class="picturecell"><video src="Atlas.mp4" controls="" width="560" height="315"></video><br>
+      </td>
+      <td class="text">
+      <h1>Atlas</h1>
+      <p>Компания Boston Dynamisc не так давно представила широкой
+публике новое поколение своего робота под название Atlas. B его
+способности просто поражают воображение. Двуногий человекоподобный
+робот легко гуляет по зимнему лесу с очень сложным рельефом. При этом
+он сохраняет равновесие даже тогда, когда его ноги проваливаются в
+снег. Но если всё-таки упадёт, робот способен самостоятельно подняться
+практически из любого положения. Источник:
+http://fishki.net/1876696-chto-umejut-samye-prodvinutye-na-segodnjashnij-den-roboty.html
+© Fishki.net</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body></html>

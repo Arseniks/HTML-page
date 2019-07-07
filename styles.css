@@ -1,0 +1,65 @@
+/* CSS Document */
+
+#innovation {
+	position:absolute;
+	left:90%;
+	z-index:-1;
+}
+
+body {
+	padding-left: 120px;
+	padding-right: 120px;
+	padding-top: 100px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	margin: 0;
+	font-size: 1.3em;
+	color: #F33;	
+}
+
+a:link {
+	color:#06C;
+	text-decoration: underline;
+}
+a:visited {
+	color:#06C;
+	text-decoration: underline;
+}
+a:hover {
+	color:#F00;
+	text-decoration: underline;
+}
+
+.menu {
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 1.4em;
+	font-style: italic;
+}
+
+.bigtable {
+	margin-top: 40px;	
+	width: 100%;
+}
+
+.text {
+	padding-top: 40px;
+	padding-left: 60px;
+	padding-bottom: 60px;
+	line-height: 140%;
+}
+
+.picture {
+	border: 3px solid #CCC;
+	margin-bottom: 10px;	
+}
+
+.picturecell {
+	vertical-align: top;
+	padding-bottom: 20px;
+	width: 250px;	
+}
